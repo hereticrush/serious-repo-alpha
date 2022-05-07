@@ -9,3 +9,22 @@ html, body {
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
+.main-text {
+    position: relative;
+    display: inline-flex;
+    left: 45%;
+    right: 45%;
+}
+
+.main-text > p {
+    position: absolute;
+    line-height: 1.5;
+}
+
+.righttopmost-text {
+    position: absolute;
+    display: inline-flex;
+    top: 5px;
+    right: 50px;
+}
