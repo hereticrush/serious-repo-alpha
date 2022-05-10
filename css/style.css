@@ -33,9 +33,83 @@ html, body {
 .card {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 70%;
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     background: olivedrab;
+    color: white;
     text-align: center;
+    padding: 2em;
+}
+
+.profile-name {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.profile-name::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 2em;
+    background: olivedrab;
+    margin: 0.5em auto 0.5em;
+    opacity: 0.4;
+}
+
+.profile-position {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.650rem;
+    letter-spacing: 1.5px;
+    color: olivedrab;
+    margin-bottom: 2em;
+}
+
+.profile-body {
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+    width: 120px;
+    border: 2px solid olivedrab;
+}
+
+.social-link {
+    color: white;
+    opacity: 0.4;
+    font-size: 1.125rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    opacity: 1;
+}
+
+@media (min-width: 500px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .profile-main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
 }
